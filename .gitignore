@@ -1,0 +1,347 @@
+# MoveRight .gitignore
+
+# ===================================
+# PYTHON & BACKEND
+# ===================================
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Python compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Flask specific
+instance/
+.webassets-cache
+
+# ===================================
+# DATABASE FILES
+# ===================================
+
+# SQLite databases (don't commit local DB files)
+*.db
+*.sqlite
+*.sqlite3
+moveright-dev.db
+moveright.db
+
+# Database dumps
+*.sql
+*.dump
+
+# ===================================
+# ENVIRONMENT & CONFIG
+# ===================================
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+.env.test
+
+# Configuration files with secrets
+config.py
+local_config.py
+secrets.json
+credentials.json
+
+# ===================================
+# FRONTEND / NODE.JS
+# ===================================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Production builds
+build/
+dist/
+.next/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+.nyc_output
+
+# ===================================
+# REACT SPECIFIC
+# ===================================
+
+# Build outputs
+/build
+/public/static/js/*.js
+/public/static/css/*.css
+
+# Development
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===================================
+# MEDIA & UPLOADS
+# ===================================
+
+# User uploaded files
+uploads/
+static/uploads/
+media/
+user_videos/
+workout_recordings/
+
+# Generated images/videos
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+processed_videos/
+
+# Large image files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.raw
+
+# EXCEPT keep small demo/sample files
+!demo/
+!samples/
+!static/images/logo.png
+!static/images/icons/
+
+# ===================================
+# MACHINE LEARNING & DATA
+# ===================================
+
+# Model files (usually too large for git)
+*.pkl
+*.joblib
+*.h5
+*.pb
+models/
+trained_models/
+checkpoints/
+
+# Dataset files
+datasets/
+training_data/
+*.csv
+*.json
+data/
+*.parquet
+
+# EXCEPT keep small sample data
+!sample_data/
+!demo_data/
+
+# ===================================
+# LOGS & TEMPORARY FILES
+# ===================================
+
+# Log files
+*.log
+logs/
+*.log.*
+log_*
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+.cache/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===================================
+# IDE & EDITOR FILES
+# ===================================
+
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ===================================
+# DOCKER & DEPLOYMENT
+# ===================================
+
+# Docker
+.dockerignore
+Dockerfile.dev
+docker-compose.override.yml
+
+# Deployment
+.deploy/
+deployment_keys/
+*.pem
+*.key
+
+# ===================================
+# BACKUP & ARCHIVE FILES
+# ===================================
+
+# Backup files
+*.bak
+*.backup
+*.old
+*_backup
+*_old
+backup_*
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ===================================
+# SPECIFIC TO MOVERIGHT
+# ===================================
+
+# Exercise analysis cache
+analysis_cache/
+pose_cache/
+
+# User session data
+session_data/
+user_sessions/
+
+# Performance profiling
+*.prof
+profiling_results/
+
+# Testing videos/images (keep small samples only)
+test_videos/
+test_images/
+!test_data/sample_pushup.mp4
+!test_data/sample_image.jpg
+
+# Local development settings
+local_settings.py
+dev_config.json
+
+# API keys and secrets
+api_keys.txt
+secrets.txt
+.secrets/
+
+# ===================================
+# SYSTEM FILES
+# ===================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ===================================
+# DOCUMENTATION BUILDS
+# ===================================
+
+# Sphinx documentation
+docs/_build/
+docs/build/
+
+# MkDocs
+site/
